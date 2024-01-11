@@ -6,7 +6,8 @@ int main() {
 
     while(scanf("%s", n) != EOF) {
         int ispalin = 1;
-
+        
+        //判斷是否迴文
         for(int i = 0, j = strlen(n) - 1; i <= strlen(n) / 2 && j >= strlen(n) / 2; i++, j--) {
             if(n[i] != n[j]) {
                 ispalin = 0;

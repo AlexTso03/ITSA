@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//輾轉相除法
 int gcd(int a, int b) {
     if(a % b == 0) {
         return b;

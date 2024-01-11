@@ -11,10 +11,12 @@ int main() {
         scanf("%d %d", &s, &d);
 
         for(int j = s; j < d; j++) {
+            //紀錄某時必須要開出去的車子數
             time[j]++;
         }
     }
 
+    //找到最大值
     for(int i = 0; i < 25; i++) {
         if(time[i] > car_num) car_num = time[i];  
     }
